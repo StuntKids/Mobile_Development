@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560183782653",
+    "project_id": "capstone-project-442805",
+    "storage_bucket": "capstone-project-442805.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560183782653:android:51d3350cf4161b9e672294",
+        "android_client_info": {
+          "package_name": "com.example.stuntkids"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1CGkpKhLRueyyrzLB7kD53cClzHmhrW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

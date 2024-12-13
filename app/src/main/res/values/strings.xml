@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">StuntKids</string>
+    <string name="welcome_to_the_stunting_app_detector">Welcome to the Stunting App Detector</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="v_0_0_1">v.0.0.1</string>
+    <string name="login1">Login</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="full_name">Full Name</string>
+    <string name="create_here"><u> Create Here</u></string>
+    <string name="sign_here"><u> Sign Here</u></string>
+    <string name="back_button">Back</string>
+
+    //home
+    <string name="history">History</string>
+    <string name="hello_user">Hello, User!</string>
+    <string name="track">Track your kid\'s record today</string>
+    <string name="our_features">Our Features</string>
+    <string name="stunting_checker_button_text">Stunting Checker</string>
+    <string name="stunting_checker_subtext">Check your kid\'s stunting status in here!</string>
+    <string name="news_article_button_text">News and Articles</string>
+    <string name="news_article_subtext">Check and read news and articles in here!</string>
+    <string name="todays_information">Today\'s Information</string>
+    <string name="article_title">Article Title</string>
+    <string name="article_desc">Short description or summary of the article.</string>
+
+    //article
+    <string name="article">Articles</string>
+    <string name="search_article">Search Articles</string>
+
+    //profile
+    <string name="user_profile">User\'s Profile</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="user_name">User\'s Name</string>
+    <string name="user_email">user.email@example.com</string>
+    <string name="kids_profile">Kid\'s Profile</string>
+    <string name="plus">+</string>
+    <string name="add_kids">Add Your Kids</string>
+    <string name="kids_logo">Kids Logo</string>
+    <string name="kids_name">Kid\'s Name</string>
+    <string name="kids_age">Age: 13 Months</string>
+    <string name="next"> > </string>
+    <string name="logout">Log out</string>
+
+    <string name="stunting_causes">
+        • Asupan gizi yang tidak memadai atau malnutrisi dalam jangka panjang dapat menyebabkan stunting\n
+        • Kondisi kesehatan dan gizi ibu sebelum dan saat kehamilan, serta setelah persalinan dapat mempengaruhi pertumbuhan janin.\n
+        • Kurangnya akses terhadap sanitasi dan air bersih dapat menyebabkan stunting\n
+        • Pola asuh yang kurang baik, terutama dalam pemberian makan kepada anak, dapat menyebabkan stunting\n
+        • Jarak kelahiran anak yang terlalu dekat dapat menyebabkan stunting.
+    </string>
+    <string name="stunting_warning"><![CDATA[Ikuti Pemenuhan Asupan ini dan lakukan pengecekan kembali <b>3 Hari 1x<b/>]]></string>
+</resources>

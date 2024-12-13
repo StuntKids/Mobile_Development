@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Hello User Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_bottom"
+                android:padding="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/helloUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hello_user"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_bold" />
+
+                <TextView
+                    android:id="@+id/trackKidsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/track"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_medium" />
+            </LinearLayout>
+
+            <!-- Our Features Section -->
+            <TextView
+                android:id="@+id/ourFeaturesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/our_features"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Stunting Checker Button -->
+            <RelativeLayout
+                android:id="@+id/stuntingCheckerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/purple_rounded"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/iconStuntingChecker"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_stunting_checker" />
+
+                <TextView
+                    android:id="@+id/mainTextStuntingChecker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stunting_checker_button_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:layout_toEndOf="@id/iconStuntingChecker"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/subTextStuntingChecker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stunting_checker_subtext"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_toEndOf="@id/iconStuntingChecker"
+                    android:layout_below="@id/mainTextStuntingChecker"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp" />
+            </RelativeLayout>
+
+            <!-- News and Article Button -->
+            <RelativeLayout
+                android:id="@+id/newsArticleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/purple_rounded"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/iconNewsArticle"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_news_articles" />
+
+                <TextView
+                    android:id="@+id/mainTextNewsArticle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_article_button_text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:layout_toEndOf="@id/iconNewsArticle"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/subTextNewsArticle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_article_subtext"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_toEndOf="@id/iconNewsArticle"
+                    android:layout_below="@id/mainTextNewsArticle"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp" />
+            </RelativeLayout>
+
+            <!-- Today's Information (Articles Section) -->
+            <TextView
+                android:id="@+id/todaysInformationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/todays_information"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/colorPrimary"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/todaysInfoRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
